@@ -1,5 +1,5 @@
-function Careers() {
-  return <div></div>;
-}
+const Careers = () => {
+  return <div>Careers</div>;
+};
 
 export default Careers;

@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --color-background: var(--background);
+}
+
+:root {
+    --background: oklch(59.787% 0.24535 29.223);
+}
+
+.dark {
+    --background: oklch(39.66% 0.22375 290.556);
+}
+
+
+@layer base {
+    body {
+        @apply bg-background;
+    }
+}
